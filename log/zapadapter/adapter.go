@@ -2,7 +2,7 @@
 package zapadapter
 
 import (
-	"github.com/jackc/pgx"
+	"github.com/MikeMuzzy/pgx"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

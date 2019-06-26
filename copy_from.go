@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/jackc/pgx/pgio"
-	"github.com/jackc/pgx/pgproto3"
+	"github.com/MikeMuzzy/pgx/pgio"
+	"github.com/MikeMuzzy/pgx/pgproto3"
 	"github.com/pkg/errors"
 )
 

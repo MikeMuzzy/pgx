@@ -3,8 +3,8 @@ package pgtype_test
 import (
 	"testing"
 
-	"github.com/jackc/pgx/pgtype"
-	"github.com/jackc/pgx/pgtype/testutil"
+	"github.com/MikeMuzzy/pgx/pgtype"
+	"github.com/MikeMuzzy/pgx/pgtype/testutil"
 )
 
 func TestLineTranscode(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"database/sql/driver"
 	"encoding/binary"
 
-	"github.com/jackc/pgx/pgio"
+	"github.com/MikeMuzzy/pgx/pgio"
 	"github.com/pkg/errors"
 )
 

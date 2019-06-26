@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/jackc/pgx/pgtype"
+	"github.com/MikeMuzzy/pgx/pgtype"
 )
 
 type ConnPoolConfig struct {

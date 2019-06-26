@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jackc/pgx"
-	"github.com/jackc/pgx/pgtype"
+	"github.com/MikeMuzzy/pgx"
+	"github.com/MikeMuzzy/pgx/pgtype"
 )
 
 func TestCrateDBConnect(t *testing.T) {

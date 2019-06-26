@@ -3,8 +3,8 @@ package pgx
 import (
 	"context"
 
-	"github.com/jackc/pgx/pgproto3"
-	"github.com/jackc/pgx/pgtype"
+	"github.com/MikeMuzzy/pgx/pgproto3"
+	"github.com/MikeMuzzy/pgx/pgtype"
 )
 
 type batchItem struct {

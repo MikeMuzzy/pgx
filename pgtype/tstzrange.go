@@ -3,7 +3,7 @@ package pgtype
 import (
 	"database/sql/driver"
 
-	"github.com/jackc/pgx/pgio"
+	"github.com/MikeMuzzy/pgx/pgio"
 	"github.com/pkg/errors"
 )
 

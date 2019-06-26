@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/jackc/pgx/pgio"
-	"github.com/jackc/pgx/pgtype"
+	"github.com/MikeMuzzy/pgx/pgio"
+	"github.com/MikeMuzzy/pgx/pgtype"
 )
 
 const (

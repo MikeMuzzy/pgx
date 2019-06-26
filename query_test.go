@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/cockroachdb/apd"
-	"github.com/jackc/pgx"
-	"github.com/jackc/pgx/pgtype"
-	satori "github.com/jackc/pgx/pgtype/ext/satori-uuid"
+	"github.com/MikeMuzzy/pgx"
+	"github.com/MikeMuzzy/pgx/pgtype"
+	satori "github.com/MikeMuzzy/pgx/pgtype/ext/satori-uuid"
 	"github.com/satori/go.uuid"
 	"github.com/shopspring/decimal"
 )
