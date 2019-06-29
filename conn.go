@@ -1146,6 +1146,12 @@ func (c *Conn) prepareEx(name, sql string, opts *PrepareExOptions) (ps *Prepared
 		default:
 			if e := c.processContextFreeMsg(msg); e != nil && softErr == nil {
 				softErr = e
+				/*
+				 * make error return explicit
+				 */
+				if pgErr, ok := e.(PgError); ok && pgErr.Severity == "FATAL" {
+					return nil, pgErr
+				}
 			}
 		}
 	}
@@ -1825,6 +1831,12 @@ func (c *Conn) execEx(ctx context.Context, sql string, options *QueryExOptions, 
 		default:
 			if e := c.processContextFreeMsg(msg); e != nil && softErr == nil {
 				softErr = e
+				/*
+				 * make error return explicit
+				 */
+				if pgErr, ok := e.(PgError); ok && pgErr.Severity == "FATAL" {
+					return commandTag, pgErr
+				}
 			}
 		}
 	}
